@@ -175,7 +175,7 @@
             <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="dash.html">Dashboard</a></li>
             <li class="breadcrumb-item text-sm text-dark active" aria-current="page">pages</li>
           </ol>
-          <h6 class="font-weight-bolder text-dark mb-0">pages</h6>
+          <!-- <h6 class="font-weight-bolder text-dark mb-0">pages</h6> -->
         </nav>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
@@ -288,12 +288,13 @@
     <!-- End Navbar -->
 
 
-    <div class="container-fluid  py-4">
+    <div class="container-fluid mt-n4 py-4">
 
       <div class="row mb-5">
         <div class="col-12">
           <div class="multisteps-form mb-5">
 
+            <!-- page selection  -->
             <div class="row mt-n5" style="display: none ;">
               <div class="col-12 col-lg-8 mx-auto my-4">
                 <div class="card">
@@ -311,6 +312,7 @@
                 </div>
               </div>
             </div>
+            <!-- page selection  -->
 
             <div class="row mt-n2">
               <div class="col-12 col-lg-12 m-auto">
@@ -318,196 +320,217 @@
 
                   <div class="card multisteps-form__panel p-3 border-radius-xl bg-white js-active"
                     data-animation="FadeIn">
-                    <!-- <h5 class="font-weight-bolder mb-0">About me</h5>
-                    <p class="mb-0 text-sm">Mandatory informations</p> -->
+                    <div>
+                      <h5 class="font-weight-bolder mb-0">About me</h5>
+                      <p class="mb-0 text-sm">Mandatory informations</p>
 
+                      <div class="button-row d-flex mt-n5 mb-4">
+                        <button class="col-4 btn bg-gradient-dark ms-auto mb-0 js-btn-next p-3" type="button"
+                          title="Next">Next</button>
+                      </div>
+                    </div>
 
 
                     <div class="multisteps-form__content">
-                      
+
+
+
                       <div class="mb-2">
                         <div class="card">
                           <div class="card-body p-2">
-                      <div class="row mt-3">
-                        <div class="col-12 col-sm-4">
-                          <label>First Name</label>
-                          <input class="multisteps-form__input form-control" type="text" placeholder="eg. Michael" />
-                        </div>
-                        <!-- <div class="col-12 col-sm-6 mt-3 mt-sm-0">
+                            <div class="row mt-3">
+                              <div class="col-12 col-sm-4">
+                                <!-- <label>First Name</label> -->
+                                <input class="multisteps-form__input form-control" type="text"
+                                  placeholder="First Name" />
+                              </div>
+                              <!-- <div class="col-12 col-sm-6 mt-3 mt-sm-0">
                           <label>Country Code</label>
                           <select name="" id="address-country" class="form-control "></select>
                         </div> -->
-                        <div class="col-12 col-sm-4">
-                          <label>Enter Mobile Number</label>
-                          <input type="number" id="phone" class="multisteps-form__input form-control"
-                            placeholder="eg. 000 000 0000" value="">
+                              <div class="col-12 col-sm-4">
+                                <!-- <label>Enter Mobile Number</label> -->
+                                <input type="number" id="phone" class="multisteps-form__input form-control"
+                                  placeholder="Enter Mobile Number" value="">
 
-                          <div class="row px-xl-5 px-sm-4 px-0  mt-1">
-                            <div class="col-3 ms-auto px-1">
-                              <a class="btn btn-outline-light w-100" href="javascript:;">
-                                <img width="32px" height="22px" src="assets/img/GL-img/flag/ind.jpg" alt="">
-                              </a>
-                            </div>
-                            <div class="col-3 px-1">
-                              <a class="btn btn-outline-light w-100" href="javascript:;">
-                                <img width="32px" height="22px" src="assets/img/GL-img/flag/uk.jpg" alt="">
-                              </a>
-                            </div>
-                            <div class="col-3 px-1">
-                              <a class="btn btn-outline-light w-100" href="javascript:;">
-                                <img width="32px" height="22px" src="assets/img/GL-img/flag/usa.jpg" alt="">
-                              </a>
-                            </div>
-                            <div class="col-3 me-auto px-1">
-                              <a class="btn btn-outline-light w-100" href="javascript:;">
-                                <img width="32px" height="22px" src="assets/img/GL-img/flag/canada.jpg" alt=""
-                                  value="+1">
-                              </a>
+                                <div class="row px-xl-5 px-sm-4 px-0  mt-1">
+                                  <div class="col-3 ms-auto px-1">
+                                    <a class="btn btn-outline-light mb-0 w-100" href="javascript:;">
+                                      <img width="32px" height="22px" src="assets/img/GL-img/flag/ind.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="col-3 px-1">
+                                    <a class="btn btn-outline-light mb-0 w-100" href="javascript:;">
+                                      <img width="32px" height="22px" src="assets/img/GL-img/flag/uk.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="col-3 px-1">
+                                    <a class="btn btn-outline-light mb-0 w-100" href="javascript:;">
+                                      <img width="32px" height="22px" src="assets/img/GL-img/flag/usa.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="col-3 me-auto px-1">
+                                    <a class="btn btn-outline-light mb-0 w-100" href="javascript:;">
+                                      <img width="32px" height="22px" src="assets/img/GL-img/flag/canada.jpg" alt=""
+                                        value="+1">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+                                <!-- <label>Email Address</label> -->
+                                <input class="multisteps-form__input form-control" type="email"
+                                  placeholder="Email Address" />
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="col-12 col-sm-4 mt-3 mt-sm-0">
-                          <label>Email Address</label>
-                          <input class="multisteps-form__input form-control" type="email"
-                            placeholder="eg. argon@dashboard.com" />
-                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
 
                       <div class="col-lg-12 ">
                         <div class="row ">
                           <div class="col-lg-3">
                             <div class="card">
                               <div class="card-body">
-                            <div class="row px-xl-5 px-sm-4 px-3  mt-3">
-                              <h6 class="font-weight-bolder text-center">Socials</h6>
-                              <div class="col-lg-6 col-md-2 col-3 ms-auto px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/fb-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/insta-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/youtube-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/whatapp-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/pint-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/be-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/linkin-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 me-auto px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/twe-01.png" alt=""
-                                    value="+1">
-                                </a>
+                                <div class="row   mt-3">
+                                  <h6 class="font-weight-bolder text-center">Socials</h6>
+                                  <div class="col-lg-4 col-md-2 col-3 ms-auto px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck1">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck1">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/fb-01.png" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck2">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck2">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/insta-01.png"
+                                        alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck3">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck3">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/youtube-01.png"
+                                        alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck4">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck4">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/whatapp-01.png"
+                                        alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck5">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck5">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/pint-01.png" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck6">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck6">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/be-01.png" alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck7">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck7">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/linkin-01.png"
+                                        alt="">
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-4 col-md-2 col-3 me-auto px-1">
+                                    <input type="checkbox" class="btn-check" id="btncheck8">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck8">
+                                      <img width="32px" height="32px" src="assets/img/GL-img/social/twe-01.png" alt="">
+                                    </label>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
 
 
 
                           <div class="col-lg-2">
                             <div class="card">
                               <div class="card-body">
-                            <div class="row  mt-3">
-                              <div class="col">
-                                
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Google</label>
+                                <div class="row  mt-3">
+                                  <div class="col">
+
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Google</label>
+                                    </div>
+                                  </div>
                                 </div>
-                              </div>
-                            </div>
-                            <div class="row mt-3">
-                              <div class="col">
-                                
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Website </label>
+                                <div class="row mt-3">
+                                  <div class="col">
+
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Website </label>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
 
 
                           <div class="col-lg-4">
                             <div class="card">
                               <div class="card-body">
-                            <div class="row mt-3">  
-                              <div class="col-6 col-sm-3">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">HORLDING </label>
+                                <div class="row mt-3">
+                                  <div class="col-6 col-sm-3">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">HORLDING </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-6 col-sm-3 mt-3 mt-sm-0">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Exhibition </label>
+                                    </div>
+                                  </div>
+                                  <div class="col-6 col-sm-3">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Paper Ad</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                                    <div class=" form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Phone</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-6 col-sm-3 mt-4">
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
+                                      <label class="custom-control-label" for="customCheck1">Email </label>
+                                    </div>
+                                  </div>
+
+
+                                </div>
+                                <div class="row mt-3">
+                                  <div class="col-12 col-sm-6">
+                                    <label>IMPORT LEAD</label>
+                                    <input class="multisteps-form__input form-control" type="text"
+                                      placeholder="Others" />
+                                  </div>
                                 </div>
                               </div>
-                              <div class="col-6 col-sm-3 mt-3 mt-sm-0">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Exhibition </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Paper Ad</label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-4 mt-sm-0">
-                                <div class=" form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Phone</label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-4">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Email </label>
-                                </div>
-                              </div>
-                              
-                              
-                            </div>
-                            <div class="row mt-3">
-                              <div class="col-12 col-sm-6">
-                                <label>IMPORT LEAD</label>
-                                <input class="multisteps-form__input form-control" type="text" placeholder="Others" />
-                              </div>
-                            </div>
-                          </div>
                             </div>
                           </div>
 
                           <div class="col-lg-3">
                             <div class="card">
                               <div class="card-body">
-                                  <div class="row mt-3">
+                                <div class="row mt-3">
                                   <div class="col-12 col-sm-12">
                                     <label>AGENT</label>
                                     <select name="" class="form-control ">
@@ -540,196 +563,86 @@
 
                         </div>
                       </div>
-                      
-                      <div class="button-row d-flex mt-4">
-                        <button class="col-4 btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                          title="Next">Next</button>
-                      </div>
+
+
                     </div>
                   </div>
 
                   <div class="card multisteps-form__panel p-3 border-radius-xl bg-white" data-animation="FadeIn">
-                    <h5 class="font-weight-bolder">Lead Generator</h5>
+                    <!-- <h5 class="font-weight-bolder">Lead Generator</h5> -->
                     <div class="multisteps-form__content">
 
-
+                      <div class="button-row d-flex mt-n1 mb-4">
+                        <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
+                        <button class="col-4 btn bg-gradient-dark ms-auto mb-0 js-btn-next p-3" type="button"
+                          title="Next">Next</button>
+                      </div>
 
 
                       <div class="col-lg-12">
                         <div class="row ">
-                          <div class="col-lg-2">
+
+                          <div class="col-lg-12">
                             <div class="card">
-                              <div class="card-body">
-                            <div class="row px-xl-5 px-sm-4 px-3  mt-3">
-                              <h6 class="font-weight-bolder text-center">Socials</h6>
-                              <div class="col-lg-6 col-md-2 col-3 ms-auto px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/fb-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/insta-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/youtube-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/whatapp-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/pint-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/be-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/linkin-01.png" alt="">
-                                </a>
-                              </div>
-                              <div class="col-lg-6 col-md-2 col-3 me-auto px-1">
-                                <a class="btn btn-outline-light w-100" href="javascript:;">
-                                  <img width="32px" height="32px" src="assets/img/GL-img/social/twe-01.png" alt=""
-                                    value="+1">
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-
-
-                          <div class="col-lg-2">
-                            <div class="card">
-                              <div class="card-body">
-                            <div class="row  mt-3">
-                              <div class="col">
-                                <label>Google</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mt-3">
-                              <div class="col">
-                                <label>Website</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-
-                          <div class="col-lg-4">
-                            <div class="card">
-                              <div class="card-body">
-                            <div class="row mt-3">  
-                              <div class="col-6 col-sm-3">
-                                <label>HORLDING</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-3 mt-sm-0">
-                                <label>Exhibition</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3">
-                                <label>Paper Ad</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-4 mt-sm-0">
-                                <label>Phone</label>
-                                <div class=" form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-4">
-                                <label>Email</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-4">
-                                <label>Lead</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                              <div class="col-6 col-sm-3 mt-4">
-                                <label>Lead</label>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="fcustomCheck1">
-                                  <label class="custom-control-label" for="customCheck1">Check this </label>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row mt-3">
-                              <div class="col-12 col-sm-6">
-                                <label>IMPORT LEAD </label>
-                                <input class="multisteps-form__input form-control" type="text" placeholder="Others" />
-                              </div>
-                            </div>
-                          </div>
-                            </div>
-                          </div>
-
-                          <div class="col-lg-4">
-                            <div class="card">
-                              <div class="card-body">
-                                  <div class="row mt-3">
-                                  <div class="col-12 col-sm-12">
-                                    <label>AGENT</label>
-                                    <select name="" class="form-control ">
-                                      <option value=""></option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                      <option value="4">Four</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                      <option value="4">Four</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                      <option value="4">adithyan</option>
-                                    </select>
+                              <div class="card-body p-0">
+                                <div class="row   mt-3">
+                                  <div class="col-lg-3 col-md-2 col-3 ms-auto px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck11">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck11">
+                                      <h3 class="m-0">Product 1</h3>
+                                    </label>
                                   </div>
-                                  <div class="ms-md-auto pe-md-3 d-flex align-items-center mt-4">
-                                    <div class="input-group">
-                                      <span class="input-group-text text-body"><i class="fas fa-search"
-                                          aria-hidden="true"></i></span>
-                                      <input type="text" class="form-control" placeholder="Type here...">
-                                    </div>
+                                  <div class="col-lg-3 col-md-2 col-3 px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck22">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck22">
+                                      <h3 class="m-0">Product 2</h3>
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-3 col-md-2 col-3 px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck33">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck33">
+                                      <h3 class="m-0">Product 3</h3>
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-3 col-md-2 col-3 px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck44">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck44">
+                                      <h3 class="m-0">Product 4</h3>
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-3 col-md-2 col-3 px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck55">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck55">
+                                      <h3 class="m-0">Product 5</h3>
+                                  </div>
+                                  <div class="col-lg-3 col-md-2 col-3 px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck66">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck66">
+                                      <h3 class="m-0">Product 6</h3>
+                                  </div>
+                                  <div class="col-lg-3 col-md-2 col-3 px-1 d-flex justify-content-center">
+                                    <input type="checkbox" class="btn-check" id="btncheck77">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck77">
+                                      <h3 class="m-0">Product 7</h3>
+                                    </label>
+                                  </div>
+                                  <div class="col-lg-3 col-md-2 col-3 me-auto px-1 d-flex justify-content-center" >
+                                    <input type="checkbox" class="btn-check" id="btncheck88">
+                                    <label class="btn  btn-outline-secondary  " for="btncheck88">
+                                      <h3 class="m-0">Product 8</h3>
+                                    </label>
                                   </div>
                                 </div>
+                                <div class=" ms-md-auto pe-md-3 row justify-content-center mt-4">
+                                  <div class="col-6">
+                                  <div class=" input-group">
+                                    <input type="text" class="form-control" placeholder="Type here...">
+                                    <span class="bg-gradient-success input-group-text text-body"><i class="fas fa-search text-white"
+                                        aria-hidden="true"></i></span>
+                                    
+                                  </div>
+                                </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -738,11 +651,7 @@
                       </div>
 
 
-                      <div class="button-row d-flex mt-4">
-                        <button class="btn bg-gradient-light mb-0 js-btn-prev" type="button" title="Prev">Prev</button>
-                        <button class="col-4 btn bg-gradient-dark ms-auto mb-0 js-btn-next" type="button"
-                          title="Next">Next</button>
-                      </div>
+                      
                     </div>
                   </div>
 
