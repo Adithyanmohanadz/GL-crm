@@ -2454,6 +2454,7 @@ progress {
   }
 }
 
+
 .table {
   --bs-table-color: #67748e;
   --bs-table-bg: transparent;
@@ -9555,6 +9556,9 @@ fieldset:disabled .btn {
 .ms-6 {
   margin-left: 4rem !important;
 }
+.ms-6-5 {
+  margin-left: 5rem !important;
+}
 
 .ms-7 {
   margin-left: 6rem !important;
@@ -9762,6 +9766,10 @@ fieldset:disabled .btn {
 
 .mt-n3 {
   margin-top: -1rem !important;
+}
+
+.mt-n3-5 {
+  margin-top: -1.2rem !important;
 }
 
 .mt-n4 {
