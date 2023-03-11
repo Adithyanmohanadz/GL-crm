@@ -11042,6 +11042,26 @@ fieldset:disabled .btn {
   max-height: 600px !important;
 }
 
+.max-height-vh-5 {
+  max-height: 5vh !important;
+}
+
+.max-height-vh-6 {
+  max-height: 6vh !important;
+}
+
+.max-height-vh-7 {
+  max-height: 7vh !important;
+}
+
+.max-height-vh-8 {
+  max-height: 8vh !important;
+}
+
+.max-height-vh-9 {
+  max-height: 9vh !important;
+}
+
 .max-height-vh-10 {
   max-height: 10vh !important;
 }
