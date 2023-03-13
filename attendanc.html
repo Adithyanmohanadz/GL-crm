@@ -20,6 +20,8 @@
   <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="./assets/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
+  <link id="pagestyle" href="./assets/css/test.css" rel="stylesheet" />
+
   
 </head>
 
@@ -94,26 +96,60 @@
         <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
           <div class="card z-index-0">
             <div class="card-header text-uppercase text-center pb-0">
-              <h5>ATTENDANCE</h5>
+              <h5>login </h5>
             </div>
           
             
             <div class="card-body ">
-                <h5 class="text-sm">already mark attendance</h5>
                 <div class="text-center"> <a href="dash.html">
                     <button type="button" class="btn bg-gradient-dark w-100 mb-4 ">Login</button> </a>
                   </div>
-                  <h5 class="text-sm">please mark attendance</h5>
-                  <div class="text-center"> <a href="attendance-mark.html">
-                    <button type="button" class="btn bg-gradient-light w-100 mb-4 ">attendance & login</button> </a>
-                  </div>
-                  
-
               
             </div>
           </div>
         </div>
+
+        <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+            <div class="card z-index-0">
+              <div class="card-header text-uppercase text-center pb-0">
+                <h5>ATTENDANCE</h5>
+              </div>
+            
+              
+              <div class="card-body ">
+                  
+                  <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="customRadio1">
+                      <label class="custom-control-label" for="customRadio1">Full day</label>
+                    </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="customRadio2">
+                      <label class="custom-control-label" for="customRadio2">Half day</label>
+                    </div>
+  
+                    
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="customRadio3">
+                          <label class="custom-control-label" for="customRadio3">Leave</label>
+                        </div>
+                      
+                      <div class="">
+                          <form action="/file-upload" class="form-control dropzone p-0 min-vh-10" id="dropzone">
+                              <div class="fallback">
+                                  <input name="file" type="file" multiple />
+                              </div>
+                          </form>
+                      </div>
+                    
+                      <div class="text-center"> <a href="dash.html">
+                          <button type="button" class="btn bg-gradient-dark w-100 my-4 mb-2">login</button> </a>
+                        </div>
+                    
+              </div>
+            </div>
+          </div>
       </div>
+      
     </div>
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
@@ -138,6 +174,17 @@
   <script src="./assets/js/core/bootstrap.min.js"></script>
   <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="./assets/js/plugins/dropzone.min.js"></script>
+
+  <script>
+    Dropzone.autoDiscover = false;
+        var drop = document.getElementById('dropzone')
+        var myDropzone = new Dropzone(drop, {
+            url: "/file/post",
+            addRemoveLinks: true
+
+        });
+  </script>
   <!-- <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {
