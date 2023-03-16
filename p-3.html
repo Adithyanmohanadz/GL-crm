@@ -23,51 +23,7 @@
   <link id="pagestyle" href="./assets/css/glstyle.css" rel="stylesheet" />
 
 
-  <!-- country code -->
-  <link rel='stylesheet'
-    href='https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?1549804213570'>
   
-    <style>
-      select {
-        background-image:
-          linear-gradient(45deg, transparent 50%, gray 50%),
-          linear-gradient(135deg, gray 50%, transparent 50%),
-          linear-gradient(to right, #ccc, #ccc);
-        background-position:
-          calc(100% - 20px) calc(1em + 2px),
-          calc(100% - 15px) calc(1em + 2px),
-          calc(100% - 2.5em) 0.5em;
-        background-size:
-          5px 5px,
-          5px 5px,
-          1px 1.5em;
-        background-repeat: no-repeat;
-      }
-  
-      select:focus {
-        background-image:
-          linear-gradient(45deg, green 50%, transparent 50%),
-          linear-gradient(135deg, transparent 50%, green 50%),
-          linear-gradient(to right, #ccc, #ccc);
-        background-position:
-          calc(100% - 15px) 1em,
-          calc(100% - 20px) 1em,
-          calc(100% - 2.5em) 0.5em;
-        background-size:
-          5px 5px,
-          5px 5px,
-          1px 1.5em;
-        background-repeat: no-repeat;
-        border-color: green;
-        outline: 0;
-      }
-  
-  
-      select:-moz-focusring {
-        color: transparent;
-        text-shadow: 0 0 0 #000;
-      }
-    </style>
     
 </head>
 
@@ -516,7 +472,7 @@
 
                                             <td class="align-baseline  text-sm">
                                               <div class="d-flex mb-2 flex-column justify-content-center">
-                                                <select class="form-control" name="choices-button-discount" id="choices-button-discount" placeholder="Departure">
+                                                <select class="select-box form-control" name="choices-button-discount" id="choices-button-discount" placeholder="Departure">
                                                   <option value="Choice 1" selected="">Discount</option>
                                                   <option value="Choice 2">10%</option>
                                                   <option value="Choice 3">25%</option>
@@ -525,7 +481,7 @@
                                                
                                               </div>
                                               <div class="d-flex mb-2 flex-column  justify-content-center">
-                                                <select class="form-control " name="choices-button-sdiscount" id="choices-button-sdiscount" placeholder="Departure">
+                                                <select class="select-box form-control " name="choices-button-sdiscount" id="choices-button-sdiscount" placeholder="Departure">
                                                   <option value="Choice 1" selected="">Special Discount</option>
                                                   <option value="Choice 2">50%</option>
                                                   <option value="Choice 3">75%</option>
@@ -689,17 +645,7 @@
   <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
 
 
-  <!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-  <script src='https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?1549804213570'></script>
-  <script src="assets/js/gl/country-code.js"></script>
-  <!-- <script>
-    $("#phone").intlTelInput({
-	initialCountry: "in",
-	separateDialCode: true,
-	// utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-});
-  </script> -->
+ 
   <script>
     
 
