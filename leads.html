@@ -23,7 +23,7 @@
     <link id="pagestyle" href="./assets/css/glstyle.css" rel="stylesheet" />
 
 
-   
+
 
 </head>
 
@@ -264,38 +264,275 @@
                                         <div class="row">
                                             <div class="col-12">
                                                 <div class="card">
-                            
+
                                                     <div class="card-header pb-0">
                                                         <div class="d-lg-flex">
                                                             <div>
                                                                 <h5 class="mb-0">Leads</h5>
-                                                                
+
                                                             </div>
                                                             <div class="ms-auto my-auto mt-lg-0 mt-4">
                                                                 <div class="ms-auto my-auto">
-                                                                    <a href="" class="btn bg-gradient-primary btn-sm mb-0"
-                                                                        target="_blank">+&nbsp; New Product</a>
-                                                                    <button type="button" class="btn btn-outline-primary btn-sm mb-0"
+
+                                                                    <button type="button"
+                                                                        class="btn bg-gradient-primary btn-sm mb-0"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#ModalAddLeads">
+                                                                        +&nbsp; New leads
+                                                                    </button>
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="ModalAddLeads"
+                                                                        tabindex="-1" role="dialog" aria-hidden="true">
+                                                                        <div class="modal-dialog modal-dialog-centered min-vw-70"
+                                                                            role="document">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header">
+                                                                                    <h5 class="modal-title"
+                                                                                        id="exampleModalLabel">+&nbsp;
+                                                                                        New leads</h5>
+                                                                                    <button type="button"
+                                                                                        class="btn-close"
+                                                                                        data-bs-dismiss="modal"
+                                                                                        aria-label="Close">
+                                                                                        <span
+                                                                                            aria-hidden="true">&times;</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <div class="modal-body">
+                                                                                    <form action="">
+                                                                                        <div class="row mb-5">
+                                                                                            <div class="col-4">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="">Status</label>
+                                                                                                    <select class="form-control" name="" id="">
+                                                                                                        <option value="1" selected="">001</option>
+                                                                                                        <option value="2">002</option>
+                                                                                                        <option value="3">003</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-4">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="">Source</label>
+                                                                                                    <select class="form-control" name="" id="">
+                                                                                                        <option value="1" selected="">001</option>
+                                                                                                        <option value="2">002</option>
+                                                                                                        <option value="3">003</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="col-4">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="">Assigned</label>
+                                                                                                    <select class="form-control" name="" id="">
+                                                                                                        <option value="1" selected="">001</option>
+                                                                                                        <option value="2">002</option>
+                                                                                                        <option value="3">003</option>
+                                                                                                    </select>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+
+                                                                                        <div class="row">
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label for="">Name</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Address</label>
+                                                                                                    <textarea
+                                                                                                        class="form-control "
+                                                                                                        id=""
+                                                                                                        rows="2"></textarea>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Position</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">City</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Email Address</label>
+                                                                                                    <input type="email"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">State</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Website</label>
+                                                                                                    <input type="url"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Country</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Phone</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Phone">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Zip Code</label>
+                                                                                                    <input type="number"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Zip Code">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Lead value</label>
+                                                                                                    <input type="number"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Default Language</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12 col-md-6 col-lg-6 ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Company</label>
+                                                                                                    <input type="text"
+                                                                                                        class="form-control"
+                                                                                                        placeholder="Name">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div
+                                                                                                class="col-12  ">
+                                                                                                <div class="form-group">
+                                                                                                    <label
+                                                                                                        for="">Description</label>
+                                                                                                        <textarea
+                                                                                                        class="form-control "
+                                                                                                        id=""
+                                                                                                        rows="5"></textarea>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="form-group">
+                                                                                            <div class="form-check form-check-inline">
+                                                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                                                                                <label class="form-check-label" for="inlineCheckbox1">Contacted Today</label>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                              
+                                                                                            <div class="form-group">
+                                                                                              <div class="form-check form-check-inline">
+                                                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                                                                                <label class="form-check-label" for="inlineCheckbox2">Public</label>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </form>
+                                                                                </div>
+                                                                                <div class="modal-footer">
+                                                                                    <button type="button"
+                                                                                        class="btn bg-gradient-secondary btn-sm"
+                                                                                        data-bs-dismiss="modal">Close</button>
+                                                                                    <button type="button"
+                                                                                        class="btn bg-gradient-primary btn-sm">Save
+                                                                                        changes</button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <button type="button"
+                                                                        class="btn btn-outline-primary btn-sm mb-0"
                                                                         data-bs-toggle="modal" data-bs-target="#import">
                                                                         Import
                                                                     </button>
-                                                                    <div class="modal fade" id="import" tabindex="-1" aria-hidden="true">
+                                                                    <!-- Modal -->
+                                                                    <div class="modal fade" id="import" tabindex="-1"
+                                                                        aria-hidden="true">
                                                                         <div class="modal-dialog mt-lg-10">
                                                                             <div class="modal-content">
                                                                                 <div class="modal-header">
-                                                                                    <h5 class="modal-title" id="ModalLabel">Import </h5>
+                                                                                    <h5 class="modal-title"
+                                                                                        id="ModalLabel">Import </h5>
                                                                                     <i class="fas fa-upload ms-3"></i>
-                                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                                                    <button type="button"
+                                                                                        class="btn-close"
+                                                                                        data-bs-dismiss="modal"
                                                                                         aria-label="Close"></button>
                                                                                 </div>
                                                                                 <div class="modal-body">
-                                                                                    <p>You can browse your computer for a file.</p>
-                                                                                    <input type="file" placeholder="Browse file..."
+                                                                                    <p>You can browse your computer for
+                                                                                        a file.</p>
+                                                                                    <input type="file"
+                                                                                        placeholder="Browse file..."
                                                                                         class="form-control mb-3">
-                                                                                    
+
                                                                                 </div>
                                                                                 <div class="modal-footer">
-                                                                                    <button type="button" class="btn bg-gradient-secondary btn-sm"
+                                                                                    <button type="button"
+                                                                                        class="btn bg-gradient-secondary btn-sm"
                                                                                         data-bs-dismiss="modal">Close</button>
                                                                                     <button type="button"
                                                                                         class="btn bg-gradient-primary btn-sm">Upload</button>
@@ -303,8 +540,11 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <button class="btn btn-outline-primary btn-sm export mb-0 mt-sm-0 mt-1"
-                                                                        data-type="csv" type="button" name="button">Export</button>
+
+                                                                    <button
+                                                                        class="btn btn-outline-primary btn-sm export mb-0 mt-sm-0 mt-1"
+                                                                        data-type="csv" type="button"
+                                                                        name="button">Export</button>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -313,50 +553,62 @@
                                                         <div class="">
                                                             <div>
                                                                 <h5 class="mb-0 text-sm">Filter by</h5>
-                                                                
+
                                                             </div>
                                                             <div class="row mt-2">
-                                                                <div class="col-lg-3 text-capitalize text-secondary">
-                                                                    <select class="form-control" name="choices-button-assigned" id="choices-button-1" placeholder="Departure">
+                                                                <div
+                                                                    class="col-lg-3 text-capitalize text-secondary mb-2">
+                                                                    <select class="form-control"
+                                                                        name="choices-button-assigned"
+                                                                        id="choices-button-1" placeholder="">
                                                                         <option selected="">assigned</option>
                                                                         <option value="Choice 1">1</option>
                                                                         <option value="Choice 2">2</option>
                                                                         <option value="Choice 3">3</option>
                                                                         <option value="Choice 4">4</option>
-                                                                      </select>
+                                                                    </select>
                                                                 </div>
-                                                                <div class="col-lg-3 text-capitalize text-secondary">
-                                                                    <select class="form-control" name="choices-button-assigned" id="choices-button-2" placeholder="Departure">
-                                                                        <option selected="">assigned</option>
+                                                                <div
+                                                                    class="col-lg-3 text-capitalize text-secondary mb-2">
+                                                                    <select class="form-control"
+                                                                        name="choices-button-assigned"
+                                                                        id="choices-button-2" placeholder="">
+                                                                        <option selected=""></option>
                                                                         <option value="Choice 1">1</option>
                                                                         <option value="Choice 2">2</option>
                                                                         <option value="Choice 3">3</option>
                                                                         <option value="Choice 4">4</option>
-                                                                      </select>
+                                                                    </select>
                                                                 </div>
-                                                                <div class="col-lg-3 text-capitalize text-secondary">
-                                                                    <select class="form-control" name="choices-button-assigned" id="choices-button-3" placeholder="Departure">
-                                                                        <option selected="">assigned</option>
+                                                                <div
+                                                                    class="col-lg-3 text-capitalize text-secondary mb-2">
+                                                                    <select class="form-control"
+                                                                        name="choices-button-assigned"
+                                                                        id="choices-button-3" placeholder="">
+                                                                        <option selected="">second</option>
                                                                         <option value="Choice 1">1</option>
                                                                         <option value="Choice 2">2</option>
                                                                         <option value="Choice 3">3</option>
                                                                         <option value="Choice 4">4</option>
-                                                                      </select>
+                                                                    </select>
                                                                 </div>
-                                                                <div class="col-lg-3 text-capitalize text-secondary">
-                                                                    <select class="form-control" name="choices-button-assigned" id="choices-button-4" placeholder="Departure">
-                                                                        <option selected="">assigned</option>
+                                                                <div
+                                                                    class="col-lg-3 text-capitalize text-secondary mb-2">
+                                                                    <select class="form-control"
+                                                                        name="choices-button-assigned"
+                                                                        id="choices-button-4" placeholder="">
+                                                                        <option selected="">additional filter</option>
                                                                         <option value="Choice 1">1</option>
                                                                         <option value="Choice 2">2</option>
                                                                         <option value="Choice 3">3</option>
                                                                         <option value="Choice 4">4</option>
-                                                                      </select>
+                                                                    </select>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-body px-0 pb-0 pt-0">
-                                                        <div class="table-responsive">
+                                                        <div class="table-responsive scrollbar-style">
                                                             <table class="table table-flush" id="products-list">
                                                                 <thead class="thead-light">
                                                                     <tr>
@@ -364,7 +616,8 @@
                                                                         <th class="w-20">name</th>
                                                                         <th class="w-12">company name</th>
                                                                         <th class="w-12">email</th>
-                                                                        <th class="w-12">coampny location,<br> coampny address,<br> phone</th>
+                                                                        <th class="w-12">coampny location,<br> coampny
+                                                                            address,<br> phone</th>
                                                                         <th class="w-12">assigned</th>
                                                                         <th class="w-12">current status</th>
                                                                         <th class="w-12">source</th>
@@ -379,7 +632,7 @@
                                                                         <td class=" text-sm">1</td>
                                                                         <td>
                                                                             <div class="d-flex">
-                                                                                
+
                                                                                 <img class="w-50 "
                                                                                     src="assets/img/avatar.jpg"
                                                                                     alt="hoodie">
@@ -391,27 +644,280 @@
                                                                         <td class="text-sm">0000 0000 00</td>
                                                                         <td class="text-sm">sik</td>
                                                                         <td>
-                                                                            <span class="badge badge-danger badge-sm">Out of Stock</span>
+                                                                            <span
+                                                                                class="badge badge-danger badge-sm">Out
+                                                                                of Stock</span>
                                                                         </td>
                                                                         <td class="text-sm">facebook</td>
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
-                                                                        <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                        <td class="">
+                                                                            <div class="dropdown my-auto">
+                                                                                <button
+                                                                                    class="btn bg-gradient-info dropdown-toggle my-auto"
+                                                                                    type="button"
+                                                                                    id="dropdownMenuButton"
+                                                                                    data-bs-toggle="dropdown"
+                                                                                    aria-expanded="false">
+                                                                                    status
+                                                                                </button>
+                                                                                <ul class="dropdown-menu"
+                                                                                    aria-labelledby="dropdownMenuButton">
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#">new</a></li>
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#">contacted </a></li>
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#">qualified </a></li>
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#">customer</a></li>
+                                                                                    <li><a class="dropdown-item"
+                                                                                            href="#">proposl sent </a>
+                                                                                    </li>
+
+                                                                                </ul>
+                                                                            </div>
                                                                         </td>
                                                                         <td class="text-sm">
-                                                                            
-                                                                            <a href="javascript:;" class="mx-3" data-bs-toggle="tooltip"
-                                                                                data-bs-original-title="Edit product">
-                                                                                <i class="fas fa-user-edit text-secondary"></i>
+
+                                                                            <a  class="mx-3"
+                                                                                data-bs-toggle="modal"
+                                                                                data-bs-target="#Modaledit">
+                                                                                <i
+                                                                                    class="fas fa-user-edit text-secondary"></i>
                                                                             </a>
-                                                                            <a href="javascript:;" data-bs-toggle="tooltip"
+
+                                                                            <!-- Modal -->
+                                                                    <div class="modal fade" id="Modaledit"
+                                                                    tabindex="-1" role="dialog" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered min-vw-70"
+                                                                        role="document">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <h5 class="modal-title"
+                                                                                    id="exampleModalLabel">+&nbsp;
+                                                                                    New leads</h5>
+                                                                                <button type="button"
+                                                                                    class="btn-close"
+                                                                                    data-bs-dismiss="modal"
+                                                                                    aria-label="Close">
+                                                                                    <span
+                                                                                        aria-hidden="true">&times;</span>
+                                                                                </button>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                                <form action="">
+                                                                                    <div class="row mb-5">
+                                                                                        <div class="col-4">
+                                                                                            <div class="form-group">
+                                                                                                <label for="">Status</label>
+                                                                                                <select class="form-control" name="" id="">
+                                                                                                    <option value="1" selected="">001</option>
+                                                                                                    <option value="2">002</option>
+                                                                                                    <option value="3">003</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-4">
+                                                                                            <div class="form-group">
+                                                                                                <label for="">Source</label>
+                                                                                                <select class="form-control" name="" id="">
+                                                                                                    <option value="1" selected="">001</option>
+                                                                                                    <option value="2">002</option>
+                                                                                                    <option value="3">003</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-4">
+                                                                                            <div class="form-group">
+                                                                                                <label for="">Assigned</label>
+                                                                                                <select class="form-control" name="" id="">
+                                                                                                    <option value="1" selected="">001</option>
+                                                                                                    <option value="2">002</option>
+                                                                                                    <option value="3">003</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label for="">Name</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Address</label>
+                                                                                                <textarea
+                                                                                                    class="form-control "
+                                                                                                    id=""
+                                                                                                    rows="2"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Position</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">City</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Email Address</label>
+                                                                                                <input type="email"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">State</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Website</label>
+                                                                                                <input type="url"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Country</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Phone</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Phone">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Zip Code</label>
+                                                                                                <input type="number"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Zip Code">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Lead value</label>
+                                                                                                <input type="number"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Default Language</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12 col-md-6 col-lg-6 ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Company</label>
+                                                                                                <input type="text"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Name">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div
+                                                                                            class="col-12  ">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="">Description</label>
+                                                                                                    <textarea
+                                                                                                    class="form-control "
+                                                                                                    id=""
+                                                                                                    rows="5"></textarea>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                        <div class="form-check form-check-inline">
+                                                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" />
+                                                                                            <label class="form-check-label" for="inlineCheckbox1">Contacted Today</label>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                          
+                                                                                        <div class="form-group">
+                                                                                          <div class="form-check form-check-inline">
+                                                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" />
+                                                                                            <label class="form-check-label" for="inlineCheckbox2">Public</label>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button"
+                                                                                    class="btn bg-gradient-secondary btn-sm"
+                                                                                    data-bs-dismiss="modal">Close</button>
+                                                                                <button type="button"
+                                                                                    class="btn bg-gradient-primary btn-sm">Save
+                                                                                    changes</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                            <a href="javascript:;"
+                                                                                data-bs-toggle="tooltip"
                                                                                 data-bs-original-title="Delete product">
-                                                                                <i class="fas fa-trash text-secondary"></i>
+                                                                                <i
+                                                                                    class="fas fa-trash text-secondary"></i>
                                                                             </a>
                                                                         </td>
                                                                     </tr>
-                                                                    <tr>
+                                                                    <!-- <tr>
                                                                         <td class=" text-sm">2</td>
                                                                         <td>
                                                                             <div class="d-flex">
@@ -433,7 +939,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -469,7 +982,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -505,7 +1025,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -541,7 +1068,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -577,7 +1111,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -613,7 +1154,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -649,7 +1197,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -685,7 +1240,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -721,7 +1283,14 @@
                                                                         <td class="text-sm"></td>
                                                                         <td class="text-sm">2000</td>
                                                                         <td>
-                                                                            <span class="badge badge-primary badge-sm">new</span>
+                                                                            <select class=" form-control  " name="" id="" placeholder="">
+                                                                                <option selected="">STATUS </option>
+                                                                                <option value="new">new</option>
+                                                                                <option value="contacted">contacted</option>
+                                                                                <option value="qualified">qualified</option>
+                                                                                <option value="customer">customer</option>
+                                                                                <option value="proposl sent">proposl sent</option>
+                                                                              </select>
                                                                         </td>
                                                                         <td class="text-sm">
                                                                             
@@ -734,11 +1303,11 @@
                                                                                 <i class="fas fa-trash text-secondary"></i>
                                                                             </a>
                                                                         </td>
-                                                                    </tr>
-                                                                    
-                                                                    
+                                                                    </tr> -->
+
+
                                                                 </tbody>
-                                                                
+
                                                             </table>
                                                         </div>
                                                     </div>
@@ -807,7 +1376,7 @@
     <script src="./assets/js/plugins/jkanban/jkanban.js"></script>
 
     <script>
-    
+
 
         if (document.getElementById('choices-button-1')) {
             var element = document.getElementById('choices-button-1');
@@ -828,8 +1397,8 @@
             var element = document.getElementById('choices-button-4');
             const example = new Choices(element);
         }
-    
-        
+
+
     </script>
 
     <script>
@@ -858,7 +1427,7 @@
             });
         };
     </script>
-    
+
 
     <script>
         var win = navigator.platform.indexOf('Win') > -1;

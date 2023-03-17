@@ -8925,6 +8925,26 @@ fieldset:disabled .btn {
   width: 100vw !important;
 }
 
+.min-vw-50 {
+  min-width: 50vw !important;
+}
+
+.min-vw-60 {
+  min-width: 60vw !important;
+}
+
+.min-vw-70 {
+  min-width: 70vw !important;
+}
+
+.min-vw-80 {
+  min-width: 80vw !important;
+}
+
+.min-vw-90 {
+  min-width: 90vw !important;
+}
+
 .min-vw-100 {
   min-width: 100vw !important;
 }
