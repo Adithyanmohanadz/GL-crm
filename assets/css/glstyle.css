@@ -123,10 +123,19 @@
 }
 /* select */
 
+/* select searchbox colour */
 .choices[data-type*=select-one] .choices__input{
   background: #3447671e !important;
     border-radius: 10px !important;
     margin-bottom: 5px !important;
     
 }
-  
+/* select searchbox colour */
+
+.social-btn{
+    margin-left: -18px !important; 
+    margin-top: -8px !important;
+    border: unset !important;
+}
+
+
