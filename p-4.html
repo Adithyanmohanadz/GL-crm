@@ -273,9 +273,24 @@
                                             <p class="mb-0 text-sm">Mandatory informations</p> -->
                       
                                             <div class=" d-flex  mb-4">
-                                              <a href="dash.html" class="col-4 btn bg-gradient-success ms-auto mb-0 p-3" type="button"
-                                                title="new order">Submit</a>
-                                            </div>
+
+                                                <div class="d-flex col-3 ms-auto mb-0 flex-column justify-content-center">
+                                                    <select class="select-box form-control" name="choices-button-discount"
+                                                      id="choices-button-discount" placeholder="Departure">
+                                                      <option value="Choice 1" selected=""></option>
+                                                      <option value="Choice 2">individual </option>
+                                                      <option value="Choice 3">composite</option>
+                                                    </select>
+      
+                                                  </div>
+
+                                              <a href="dash.html" class="col-3  btn bg-gradient-success ms-2 mb-0 p-3" type="button"
+                                                title="new order">ORDER CONFIRMATION</a>
+
+                                                <a href="dash.html" class="col-3 btn bg-gradient-success ms-2 mb-0 p-3" type="button"
+                                                  title="new order">Submit</a>
+                                              </div>
+                                            
                                           </div>
 
                                         <div class="row button-row d-flex ms-2 mb-2">
@@ -312,6 +327,19 @@
                                                 <h6 class=" font-weight-bolder ">Address</h6>
                                             </div>
                                         </div>
+                                        <div class="row button-row d-flex ms-2 mb-2">
+                                            <div class="col-lg-3 ">
+                                               <label>Attended by</label>
+                                                     <input class=" form-control" type="email"
+                                                            placeholder="Attended by" />
+                                            </div>
+                                            <div class="col-lg-3 ">
+                                                <div class="form-group">
+                                                    <label for="example-datetime-local-input" class="form-control-label">Last attended date and time</label>
+                                                    <input class="form-control" type="datetime-local" value="2018-11-23T10:30:00" id="example-datetime-local-input">
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <div class="col-lg-12">
 
@@ -327,7 +355,17 @@
                                                                 <div class=" col-lg-2 mb-3 text-center">
                                                                     <h6 class=" font-weight-bolder "> doc1</h6>
 
-                                                                    <div class="form-check form-check-inline">
+                                                                    <div class="d-flex mb-2 flex-column justify-content-center">
+                                                                        <select class="select-box form-control" name="choices-button-discount"
+                                                                          id="choices-button-discount" placeholder="Departure">
+                                                                          <option value="Choice 1" selected="">documents</option>
+                                                                          <option value="Choice 2">Yes</option>
+                                                                          <option value="Choice 3">No</option>
+                                                                          <option value="Choice 4">Need</option>
+                                                                        </select>
+                                                                      </div>
+
+                                                                    <!-- <div class="form-check form-check-inline">
                                                                         <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
                                                                         <label class="custom-control-label"
                                                                             for="customRadio1">yes</label>
@@ -339,128 +377,24 @@
                                                                     </div>
                                                                     <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
                                                                         <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
+                                                                    </button> -->
 
                                                                 </div>
                                                                 <div class=" col-lg-2 mb-3 text-center">
                                                                     <h6 class=" font-weight-bolder ">doc2</h6>
 
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-lg-2 mb-3 text-center">
-                                                                    <h6 class=" font-weight-bolder ">doc3</h6>
+                                                                    <div class="d-flex mb-2 flex-column justify-content-center">
+                                                                        <select class="select-box form-control" name="choices-button-discount"
+                                                                          id="choices-button-discount" placeholder="Departure">
+                                                                          <option value="Choice 1" selected="">documents</option>
+                                                                          <option value="Choice 2">Yes</option>
+                                                                          <option value="Choice 3">No</option>
+                                                                          <option value="Choice 4">Need</option>
+                                                                        </select>
+                                                                      </div>
 
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
                                                                 </div>
-                                                                <div class="col-lg-2 mb-3 text-center">
-                                                                    <h6 class=" font-weight-bolder ">doc4</h6>
-
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-lg-2 mb-3 text-center">
-                                                                    <h6 class=" font-weight-bolder "> doc5</h6>
-
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-lg-2 mb-3 text-center">
-                                                                    <h6 class=" font-weight-bolder ">doc6 </h6>
-
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-lg-2 mb-3 text-center">
-                                                                    <h6 class=" font-weight-bolder ">doc7</h6>
-
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="col-lg-2 mb-3 text-center">
-                                                                    <h6 class=" font-weight-bolder ">doc8</h6>
-
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input class="form-check-input" type="radio"name="flexRadioDefault" id="customRadio1">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio1">yes</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline"">
-                                                                        <input class=" form-check-input" type="radio" name="flexRadioDefault"id="customRadio2">
-                                                                        <label class="custom-control-label"
-                                                                            for="customRadio2">no</label>
-                                                                    </div>
-                                                                    <button class="btn btn-icon py-0  px-1 mb-0 bg-gradient-secondary" type="button">
-                                                                        <span class="btn-inner--icon "><i class="ni ni-fat-add mt-1" style="font-size: 20px;"></i></span>
-                                                                    </button>
-                                                                </div>
+                                                                
                                                             </div>
                                                         </div>
                                                     </div>
@@ -540,24 +474,18 @@
                                                                         <tr>
                                                                             <thead>
                                                                                 <tr>
+                                                                                    
                                                                                     <th class="  text-xxs font-weight-bolder  ps-2">
                                                                                         <a href="">
                                                                                             <h6
-                                                                                                class="mb-2 w-100 btn bg-primary text-white  text-uppercase">
-                                                                                                ORDER CONFIRMATION </h6>
-                                                                                        </a>
-                                                                                    </th>
-                                                                                    <th class="  text-xxs font-weight-bolder  ps-2">
-                                                                                        <a href="">
-                                                                                            <h6
-                                                                                                class="mb-2 w-100 btn bg-danger text-white  text-uppercase">
+                                                                                                class="mb-2 w-100 btn btn-danger  text-uppercase">
                                                                                                 high </h6>
                                                                                         </a>
                                                                                     </th>
                                                                                     <th class="text-xxs font-weight-bolder  ps-2">
                                                                                         <a href="">
                                                                                             <h6
-                                                                                                class="mb-2 w-100 btn bg-success text-white  text-uppercase">
+                                                                                                class="mb-2 w-100 btn btn-success  text-uppercase">
                                                                                                 medium </h6>
                                                                                         </a>
                                                                                     </th>
@@ -585,10 +513,13 @@
                                                                                         
                                                                                     </th>
                                                                                     <th class="text-xxs font-weight-bolder  ps-2">
+                                                                                        
+                                                                                    </th>
+                                                                                    <th class="text-xxs font-weight-bolder  ps-2">
                                                                                         <a href="P-5.html">
                                                                                             <h6
-                                                                                                class="mb-2 w-100 btn bg-gradient-success text-white  text-uppercase">
-                                                                                                Submit </h6>
+                                                                                                class="mb-2 w-100 btn btn-primary  text-uppercase">
+                                                                                                enquiry creation </h6>
                                                                                         </a>
                                                                                     </th>
                                                                                 </tr>
